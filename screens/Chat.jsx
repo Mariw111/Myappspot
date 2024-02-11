@@ -47,7 +47,7 @@ const Chat = () => {
       {renderCard(
         "Flash Express",
         "https://image.makewebeasy.net/makeweb/m_1920x0/Ex64W2e9S/DefaultData/flash_express_1.jpg?v=202311151122",
-        "https://flashexpress.com/call-center/?fbclid=IwAR08kUHlRuPVndr970uSVghM4gthD5qkqlNxYSSUk-kstI_jd2L5rjOFwq8"
+        "https://flashexpress.com/th/call-center/?fbclid=IwAR08kUHlRuPVndr970uSVghM4gthD5qkqlNxYSSUk-kstI_jd2L5rjOFwq8"
       )}
       {renderCard(
         "J&T",

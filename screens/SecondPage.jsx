@@ -221,13 +221,13 @@ function BottomSheetContent({activeMarker}) {
     <View style={{flexDirection: 'row', justifyContent:'space-between'}}>
       <Text style={{ fontSize: 20, fontWeight: 'bold'}}>{activeMarker.company}</Text>
       {
-        // (stars > 0) ? (
-        //   <Icon.Button name="star" color="#FFC107" size={15}>
-        //     <Text>{stars}</Text>
-        //   </Icon.Button>
-        // ) : (
-        //   <Icon name="star-o" size={20} />
-        // )
+        (stars > 0) ? (
+          <Icon.Button name="star" color="#FFC107" size={15}>
+            <Text>{stars}</Text>
+          </Icon.Button>
+        ) : (
+          <Icon name="star-o" size={20} />
+        )
       }
     </View>
     <View style={{margin:0 ,paddingLeft:25, paddingRight: 25,}}>

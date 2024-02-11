@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Alert, StyleSheet, View, AppState } from 'react-native'
+import { Alert, StyleSheet, View, AppState, Text } from 'react-native'
 import { supabase } from '../utils/supabase'
 import { Button, Input } from 'react-native-elements'
 
@@ -42,7 +42,7 @@ export default function Auth() {
     })
 
     if (error) Alert.alert(error.message)
-    if (!session) Alert.alert('Please check your inbox for email verification!')
+    if (!session) Alert.alert('ตรวจสอบความถูกต้อง!!!')
     setLoading(false)
   }
 
@@ -75,6 +75,7 @@ export default function Auth() {
       <View style={styles.verticallySpaced}>
         <Button title="Sign up" disabled={loading} onPress={() => signUpWithEmail()} />
       </View>
+      <Text style={{fontSize:16,fontWeight:'400',alignSelf:'center',margin:30}}>หมายเหตุ : หากไม่มีรหัสให้กรอก Email และ Password แล้วกด Sign up ได้เลย</Text>
     </View>
   )
 }
